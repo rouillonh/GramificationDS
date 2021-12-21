@@ -1,4 +1,6 @@
+#Importamos la libreria num2words para que se impriman los nombres de los numeros que se obtienen
 from num2words import num2words 
+#Definimos la funcion para ingresar los numeros
 def digitos():
     nums = []
     print("Ingrese números de 2 digitos")
@@ -15,6 +17,7 @@ def digitos():
                 print("El número ingresado no tiene 2 digitos, no será contabilizado")
                 continue  
     return nums
+#Imprimimos cada paso que nos piden del programa
 nums = digitos()
 suma = 0
 for i in nums:
