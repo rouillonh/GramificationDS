@@ -1,3 +1,4 @@
+from num2words import num2words 
 def digitos():
     nums = []
     print("Ingrese números de 2 digitos")
@@ -18,16 +19,16 @@ nums = digitos()
 suma = 0
 for i in nums:
     suma += i
-print("La suma de los valores de la lista es ",suma)
-print("La suma multiplicada por 9 es: ",suma*9)
+print("La suma de los valores de la lista es: ",num2words(suma,lang = 'es'))
+print("La suma multiplicada por 9 es: ",num2words(suma*9,lang='es'))
 mayor = 0
 menor = 100
 for i in nums:
     if i > mayor:
         mayor = i
-print("El número mayor es ",mayor)
+print("El número mayor es: ",num2words(mayor,lang='es'))
 for i in nums:
     if i < menor:
         menor = i
-print("El número menor es ", menor)
-print("La cantidad de elementos de la lista es ", len(nums))
+print("El número menor es: ",num2words(menor,lang='es'))
+print("La cantidad de elementos de la lista es: ", num2words(len(nums),lang='es'))
